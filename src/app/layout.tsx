@@ -18,12 +18,15 @@ const oswald = Oswald({
 });
 
 const description =
-  "Property Chance — استشارات ووساطة عقارية متخصصة في شرق القاهرة: التجمع الخامس، مدينتي، الشروق، الرحاب ومستقبل سيتي. أسعار حقيقية ومتابعة حتى استلام الوحدة.";
+  "استشارات ووساطة عقارية في شرق القاهرة: التجمع الخامس، مدينتي، الشروق، الرحاب ومستقبل سيتي. أسعار حقيقية، شفافية كاملة، ومتابعة حتى استلام وحدتك.";
+
+const socialDescription =
+  "Property Chance — فريق متخصص في عقارات شرق القاهرة. نساعدك تختار الوحدة الصح بسعر السوق الحقيقي، ونتابع معك حتى التسليم.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.brand.url),
   title: {
-    default: "Property Chance | استشارات ووساطة عقارية في شرق القاهرة",
+    default: "Property Chance | وساطة واستشارات عقارية في شرق القاهرة",
     template: "%s | Property Chance",
   },
   description,
@@ -44,13 +47,13 @@ export const metadata: Metadata = {
     locale: "ar_EG",
     url: site.brand.url,
     siteName: "Property Chance — PC East Cairo",
-    title: "Property Chance | عقارك في شرق القاهرة يبدأ من فرصة صح",
-    description,
+    title: "عقارك في شرق القاهرة يبدأ من فرصة صح",
+    description: socialDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Property Chance | عقارك في شرق القاهرة يبدأ من فرصة صح",
-    description,
+    title: "عقارك في شرق القاهرة يبدأ من فرصة صح",
+    description: socialDescription,
   },
   robots: { index: true, follow: true },
 };

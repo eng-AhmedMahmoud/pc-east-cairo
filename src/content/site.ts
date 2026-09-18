@@ -6,7 +6,23 @@ export const site = {
     email: "Propertychance00@gmail.com",
     taxId: "774398833",
     url: "https://propertychance-pc.com",
+    phone: "01040369996",
+    phoneDisplay: "010 4036 9996",
+    phoneIntl: "+201040369996",
+    whatsapp: "201040369996",
   },
+  socials: [
+    {
+      name: "Facebook",
+      label: "فيسبوك",
+      href: "https://www.facebook.com/profile.php?id=61591374328849",
+    },
+    {
+      name: "Instagram",
+      label: "إنستجرام",
+      href: "https://www.instagram.com/property_chance.eg/",
+    },
+  ],
   nav: [
     { id: "about", label: "من نحن" },
     { id: "services", label: "خدماتنا" },

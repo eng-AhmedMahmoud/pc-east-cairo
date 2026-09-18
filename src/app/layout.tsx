@@ -72,8 +72,18 @@ const jsonLd = {
   alternateName: "PC - East Cairo",
   description,
   email: site.brand.email,
+  telephone: site.brand.phoneIntl,
   url: site.brand.url,
   taxID: site.brand.taxId,
+  sameAs: site.socials.map((s) => s.href),
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: site.brand.phoneIntl,
+    email: site.brand.email,
+    contactType: "sales",
+    areaServed: "EG",
+    availableLanguage: ["ar", "en"],
+  },
   areaServed: site.coverage.areas.map((name) => ({ "@type": "Place", name })),
   address: {
     "@type": "PostalAddress",

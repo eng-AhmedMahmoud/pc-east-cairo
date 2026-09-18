@@ -4,6 +4,7 @@ import { useState } from "react";
 import { site } from "@/content/site";
 import { Reveal } from "./Reveal";
 import { Kicker, Section } from "./Section";
+import { FacebookIcon, InstagramIcon, WhatsappIcon } from "./SocialIcons";
 
 type Fields = { name: string; phone: string; area: string; message: string };
 type Errors = Partial<Record<keyof Fields, string>>;
@@ -87,6 +88,27 @@ export function Contact() {
 
           <dl className="mt-10 space-y-7">
             <div>
+              <dt className="text-[0.85rem] text-mute">الهاتف / واتساب</dt>
+              <dd className="mt-1 flex flex-wrap items-center gap-3">
+                <a
+                  href={`tel:${site.brand.phoneIntl}`}
+                  dir="ltr"
+                  className="text-[1.12rem] font-medium tabular-nums transition-colors hover:text-red-bright"
+                >
+                  {site.brand.phoneDisplay}
+                </a>
+                <a
+                  href={`https://wa.me/${site.brand.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-sm border border-line px-3 py-1.5 text-[0.85rem] font-bold transition-colors hover:border-red hover:text-red-bright"
+                >
+                  <WhatsappIcon className="h-4 w-4" />
+                  واتساب
+                </a>
+              </dd>
+            </div>
+            <div>
               <dt className="text-[0.85rem] text-mute">البريد الإلكتروني</dt>
               <dd className="mt-1 text-[1.12rem] font-medium">
                 <a href={`mailto:${site.brand.email}`} className="transition-colors hover:text-red-bright">
@@ -101,6 +123,28 @@ export function Contact() {
             <div>
               <dt className="text-[0.85rem] text-mute">رقم التسجيل الضريبي</dt>
               <dd className="mt-1 text-[1.12rem] font-medium tabular-nums">{site.brand.taxId}</dd>
+            </div>
+            <div>
+              <dt className="text-[0.85rem] text-mute">تابعنا</dt>
+              <dd className="mt-2 flex flex-wrap gap-3">
+                {site.socials.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${site.brand.name} على ${social.label}`}
+                    className="inline-flex items-center gap-2 rounded-sm border border-line px-4 py-2 text-[0.9rem] transition-colors hover:border-red hover:text-red-bright"
+                  >
+                    {social.name === "Facebook" ? (
+                      <FacebookIcon className="h-4 w-4" />
+                    ) : (
+                      <InstagramIcon className="h-4 w-4" />
+                    )}
+                    {social.label}
+                  </a>
+                ))}
+              </dd>
             </div>
           </dl>
         </Reveal>

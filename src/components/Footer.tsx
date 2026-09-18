@@ -1,5 +1,6 @@
 import { site } from "@/content/site";
 import { Logo } from "./Logo";
+import { FacebookIcon, InstagramIcon, WhatsappIcon } from "./SocialIcons";
 
 export function Footer() {
   return (
@@ -11,6 +12,41 @@ export function Footer() {
             {site.brand.name} <span className="text-mute-dim">—</span> PC - East Cairo
           </span>
         </div>
+        <div className="flex items-center gap-2">
+          <a
+            href={`tel:${site.brand.phoneIntl}`}
+            dir="ltr"
+            className="rounded-sm border border-line px-3 py-1.5 tabular-nums text-mute transition-colors hover:border-red hover:text-red-bright"
+          >
+            {site.brand.phoneDisplay}
+          </a>
+          <a
+            href={`https://wa.me/${site.brand.whatsapp}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="واتساب"
+            className="flex h-9 w-9 items-center justify-center rounded-sm border border-line text-mute transition-colors hover:border-red hover:text-red-bright"
+          >
+            <WhatsappIcon className="h-4 w-4" />
+          </a>
+          {site.socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${site.brand.name} على ${social.label}`}
+              className="flex h-9 w-9 items-center justify-center rounded-sm border border-line text-mute transition-colors hover:border-red hover:text-red-bright"
+            >
+              {social.name === "Facebook" ? (
+                <FacebookIcon className="h-4 w-4" />
+              ) : (
+                <InstagramIcon className="h-4 w-4" />
+              )}
+            </a>
+          ))}
+        </div>
+
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <span className="tabular-nums">رقم التسجيل الضريبي {site.brand.taxId}</span>
           <span aria-hidden>|</span>

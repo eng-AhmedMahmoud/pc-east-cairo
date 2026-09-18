@@ -50,6 +50,8 @@ export function Footer() {
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <span className="tabular-nums">رقم التسجيل الضريبي {site.brand.taxId}</span>
           <span aria-hidden>|</span>
+          <span className="tabular-nums">رقم البطاقة الضريبية {site.brand.taxCardNo}</span>
+          <span aria-hidden>|</span>
           <span>جميع الحقوق محفوظة © {new Date().getFullYear()}</span>
         </div>
       </div>

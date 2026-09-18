@@ -5,6 +5,7 @@ export const site = {
     tagline: "فرصة صح",
     email: "Propertychance00@gmail.com",
     taxId: "774398833",
+    taxCardNo: "2500216267264749",
     url: "https://propertychance-pc.com",
     phone: "01040369996",
     phoneDisplay: "010 4036 9996",

@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="84" fill="#0a0a0a"/>
-  <rect x="6" y="6" width="500" height="500" rx="78" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="12"/>
-  <g transform="translate(68,64) scale(0.5186)">
-    <g fill="none" stroke="#b50128" stroke-linecap="butt" stroke-linejoin="miter" transform="translate(-263,-260)">
-      <polyline points="290,638 629,304 961,638" stroke-width="48"/>
-      <path d="M782 442V378H873V560" stroke-width="48"/>
-    </g>
-    <path fill="#b50128" fill-rule="evenodd" transform="translate(-263,-260)"
-      d="M625 1004 460.5 779.6a204 204 0 1 1 329 0Z M625 531a128 128 0 1 0 0 256 128 128 0 1 0 0-256Z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#0a0a0a" rx="84"/><rect width="500" height="500" x="6" y="6" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="12" rx="78"/><g><g fill="none" stroke="#b50128" stroke-linecap="butt" stroke-linejoin="miter" transform="translate(68,64) scale(0.5186) translate(-263,-260)"><polyline stroke-width="48" points="290 638 629 304 961 638"/><path stroke-width="48" d="M782 442V378H873V560"/></g><path fill="#b50128" fill-rule="evenodd" d="M625 1004 460.5 779.6a204 204 0 1 1 329 0Z M625 531a128 128 0 1 0 0 256 128 128 0 1 0 0-256Z" transform="translate(68,64) scale(0.5186) translate(-263,-260)"/></g></svg>

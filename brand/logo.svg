@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254">
+  <g fill="none" stroke="#b50128" stroke-linecap="butt" stroke-linejoin="miter">
+    <polyline points="290,638 629,304 961,638" stroke-width="48"/>
+    <path d="M782 442V378H873V560" stroke-width="48"/>
+  </g>
+  <path fill="#b50128" fill-rule="evenodd" d="M625 1004 460.5 779.6a204 204 0 1 1 329.0 0Z M625 531a128 128 0 1 0 0 256a128 128 0 1 0 0 -256Z"/>
+</svg>

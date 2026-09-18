@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-line py-10">
       <div className="wrap flex flex-wrap items-center justify-between gap-5 text-[0.85rem] text-mute-dim">
         <div className="flex items-center gap-2.5 text-mute">
-          <Logo className="h-7 w-7 text-mute" />
+          <Logo className="h-7 w-7 text-red" />
           <span>
             {site.brand.name} <span className="text-mute-dim">—</span> PC - East Cairo
           </span>

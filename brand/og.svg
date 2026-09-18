@@ -5,8 +5,8 @@
       <stop offset="100%" stop-color="#0a0a0a"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#e5083a" stop-opacity="0.30"/>
-      <stop offset="100%" stop-color="#e5083a" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#b50128" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#b50128" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="84" height="84" patternUnits="userSpaceOnUse">
       <path d="M84 0H0V84" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
@@ -32,23 +32,26 @@
       <rect x="80" y="450" width="18" height="18"/><rect x="114" y="450" width="18" height="18"/>
       <rect x="376" y="456" width="18" height="18"/><rect x="410" y="456" width="18" height="18"/>
     </g>
-    <path d="M192 320 267 262l75 58" fill="none" stroke="#e5083a" stroke-opacity="0.85" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M192 320 267 262l75 58" fill="none" stroke="#b50128" stroke-opacity="0.85" stroke-width="3" stroke-linejoin="round"/>
     <line x1="0" y1="580" x2="520" y2="580" stroke="#ffffff" stroke-opacity="0.14" stroke-width="2"/>
   </g>
   <polyline points="820,560 1010,410 1240,560" fill="none" stroke="#ffffff" stroke-opacity="0.07" stroke-width="2"/>
 
-  <g transform="translate(1004,64) scale(2)">
-    <rect width="64" height="64" rx="10" fill="#0a0a0a"/>
-    <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="9.25" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
-    <path d="M12 27.5 32 11l20 16.5" fill="none" stroke="#e5083a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-    <path d="M17.5 36v17M17.5 36h6.6a4.6 4.6 0 0 1 0 9.2h-6.6" fill="none" stroke="#f4f3f1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M46.8 38.4a7.4 7.4 0 1 0 0 12.2" fill="none" stroke="#f4f3f1" stroke-width="4" stroke-linecap="round"/>
+  <g transform="translate(951.9,64) scale(0.2044)">
+    <g transform="translate(-273,-270)">
+      <g fill="none" stroke="#b50128" stroke-linecap="butt" stroke-linejoin="miter">
+        <polyline points="290,638 629,304 961,638" stroke-width="48"/>
+        <path d="M782 442V378H873V560" stroke-width="48"/>
+      </g>
+      <path fill="#b50128" fill-rule="evenodd"
+        d="M625 1004 460.5 779.6a204 204 0 1 1 329 0Z M625 531a128 128 0 1 0 0 256 128 128 0 1 0 0-256Z"/>
+    </g>
   </g>
 
   <text x="1096" y="300" text-anchor="end" font-family="SF Arabic, Geeza Pro, sans-serif" font-size="72" font-weight="700" fill="#f4f3f1">عقارك في شرق القاهرة</text>
-  <text x="1096" y="392" text-anchor="end" font-family="SF Arabic, Geeza Pro, sans-serif" font-size="72" font-weight="700" fill="#f4f3f1">يبدأ من <tspan fill="#e5083a">فرصة صح</tspan></text>
+  <text x="1096" y="392" text-anchor="end" font-family="SF Arabic, Geeza Pro, sans-serif" font-size="72" font-weight="700" fill="#f4f3f1">يبدأ من <tspan fill="#ef3a58">فرصة صح</tspan></text>
 
-  <rect x="1016" y="432" width="80" height="3" fill="#e5083a"/>
+  <rect x="1016" y="432" width="80" height="3" fill="#ef3a58"/>
 
   <text x="1096" y="492" text-anchor="end" font-family="SF Arabic, Geeza Pro, sans-serif" font-size="30" fill="#9a9a9a">استشارات ووساطة عقارية في شرق القاهرة والعاصمة الإدارية والساحل والسخنة</text>
 

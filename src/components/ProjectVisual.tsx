@@ -11,13 +11,13 @@ export function ProjectVisual({ className = "" }: { className?: string }) {
           <stop offset="100%" stopColor="#ffffff" stopOpacity="0.015" />
         </linearGradient>
         <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#e5083a" stopOpacity="0.16" />
-          <stop offset="100%" stopColor="#e5083a" stopOpacity="0" />
+          <stop offset="0%" stopColor="#b50128" stopOpacity="0.16" />
+          <stop offset="100%" stopColor="#b50128" stopOpacity="0" />
         </linearGradient>
       </defs>
 
       <rect width="640" height="760" fill="url(#sky)" />
-      <circle cx="470" cy="170" r="180" fill="#e5083a" opacity="0.08" />
+      <circle cx="470" cy="170" r="180" fill="#b50128" opacity="0.08" />
 
       {/* skyline */}
       <g stroke="rgba(255,255,255,0.14)" fill="url(#glass)">
@@ -56,8 +56,8 @@ export function ProjectVisual({ className = "" }: { className?: string }) {
       </g>
 
       {/* accent roofline echoing the brand mark */}
-      <path d="M206 228 290 156l84 72" fill="none" stroke="#e5083a" strokeWidth="2.5" strokeLinejoin="round" />
-      <circle cx="290" cy="156" r="4" fill="#e5083a" />
+      <path d="M206 228 290 156l84 72" fill="none" stroke="#b50128" strokeWidth="2.5" strokeLinejoin="round" />
+      <circle cx="290" cy="156" r="4" fill="#b50128" />
 
       {/* ground plane + greenery */}
       <rect x="0" y="630" width="640" height="130" fill="url(#ground)" />

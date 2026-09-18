@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export function Kicker({ children }: { children: ReactNode }) {
   return (
-    <span className="mb-3 flex items-center gap-2.5 text-sm font-bold tracking-wide text-red">
+    <span className="mb-3 flex items-center gap-2.5 text-sm font-bold tracking-wide text-red-bright">
       <span aria-hidden className="h-px w-6 bg-red" />
       {children}
     </span>

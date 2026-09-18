@@ -28,7 +28,7 @@ export function Hero() {
           <motion.polyline
             points="-50,420 250,180 550,420"
             fill="none"
-            stroke="#e5083a"
+            stroke="#b50128"
             strokeWidth="1"
             opacity="0.16"
             initial={reduced ? false : { pathLength: 0 }}
@@ -50,7 +50,7 @@ export function Hero() {
 
       <div className="wrap relative z-10 flex flex-col items-center text-center">
         <motion.div {...rise(0)}>
-          <Logo className="h-28 w-28 text-bone md:h-32 md:w-32" />
+          <Logo className="h-24 w-24 text-red md:h-28 md:w-28" />
         </motion.div>
 
         <motion.h1
@@ -59,7 +59,7 @@ export function Hero() {
         >
           {site.hero.titleTop}
           <br />
-          {site.hero.titleBottom} <em className="not-italic text-red">{site.hero.accent}</em>
+          {site.hero.titleBottom} <em className="not-italic text-red-bright">{site.hero.accent}</em>
         </motion.h1>
 
         <motion.div {...rise(0.18)} className="relative mt-7 h-px w-28 bg-line">
@@ -90,7 +90,7 @@ export function Hero() {
           </a>
           <a
             href="#services"
-            className="rounded-sm border border-line px-8 py-3.5 text-[0.95rem] font-bold text-bone transition-colors hover:border-red hover:text-red"
+            className="rounded-sm border border-line px-8 py-3.5 text-[0.95rem] font-bold text-bone transition-colors hover:border-red hover:text-red-bright"
           >
             خدماتنا
           </a>

@@ -19,7 +19,7 @@ export function Services() {
             delay={i * 0.06}
             className="group grid items-baseline gap-3 border-b border-line py-8 transition-colors hover:bg-white/[0.015] md:grid-cols-[3.5rem_14rem_1fr] md:gap-10"
           >
-            <span className="font-display text-sm text-mute-dim transition-colors group-hover:text-red">
+            <span className="font-display text-sm text-mute-dim transition-colors group-hover:text-red-bright">
               {String(i + 1).padStart(2, "0")}
             </span>
             <h3 className="font-display text-[1.25rem] font-semibold">

@@ -89,7 +89,7 @@ export function Contact() {
             <div>
               <dt className="text-[0.85rem] text-mute">البريد الإلكتروني</dt>
               <dd className="mt-1 text-[1.12rem] font-medium">
-                <a href={`mailto:${site.brand.email}`} className="transition-colors hover:text-red">
+                <a href={`mailto:${site.brand.email}`} className="transition-colors hover:text-red-bright">
                   {site.brand.email}
                 </a>
               </dd>
@@ -109,14 +109,14 @@ export function Contact() {
           {sent ? (
             <div className="rounded-sm border border-line bg-card p-8">
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-red/15">
-                <svg viewBox="0 0 24 24" className="h-5 w-5 text-red" fill="none" stroke="currentColor" strokeWidth="2.4">
+                <svg viewBox="0 0 24 24" className="h-5 w-5 text-red-bright" fill="none" stroke="currentColor" strokeWidth="2.4">
                   <path d="m5 13 4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <h3 className="mt-5 font-display text-[1.25rem] font-semibold">رسالتك جاهزة للإرسال</h3>
               <p className="mt-3 text-mute">
                 فتحنا برنامج البريد لديك ومعه تفاصيل طلبك. لو لم يفتح تلقائيًا، انسخ الرسالة وأرسلها إلى{" "}
-                <a href={`mailto:${site.brand.email}`} className="text-bone underline-offset-4 hover:text-red hover:underline">
+                <a href={`mailto:${site.brand.email}`} className="text-bone underline-offset-4 hover:text-red-bright hover:underline">
                   {site.brand.email}
                 </a>
                 .
@@ -125,7 +125,7 @@ export function Contact() {
                 <button
                   type="button"
                   onClick={copySummary}
-                  className="rounded-sm border border-line px-5 py-2.5 text-[0.9rem] font-bold transition-colors hover:border-red hover:text-red"
+                  className="rounded-sm border border-line px-5 py-2.5 text-[0.9rem] font-bold transition-colors hover:border-red hover:text-red-bright"
                 >
                   {copied ? "تم النسخ ✓" : "انسخ الرسالة"}
                 </button>
@@ -158,7 +158,7 @@ export function Contact() {
                   placeholder="محمد أحمد"
                 />
                 {errors.name ? (
-                  <p id="name-error" role="alert" className="mt-1.5 text-[0.82rem] text-red">
+                  <p id="name-error" role="alert" className="mt-1.5 text-[0.82rem] text-red-bright">
                     {errors.name}
                   </p>
                 ) : null}
@@ -182,7 +182,7 @@ export function Contact() {
                   placeholder="01012345678"
                 />
                 {errors.phone ? (
-                  <p id="phone-error" role="alert" className="mt-1.5 text-[0.82rem] text-red">
+                  <p id="phone-error" role="alert" className="mt-1.5 text-[0.82rem] text-red-bright">
                     {errors.phone}
                   </p>
                 ) : null}
@@ -218,7 +218,7 @@ export function Contact() {
                   placeholder="أبحث عن شقة ١٥٠ متر في التجمع الخامس بميزانية..."
                 />
                 {errors.message ? (
-                  <p id="message-error" role="alert" className="mt-1.5 text-[0.82rem] text-red">
+                  <p id="message-error" role="alert" className="mt-1.5 text-[0.82rem] text-red-bright">
                     {errors.message}
                   </p>
                 ) : null}

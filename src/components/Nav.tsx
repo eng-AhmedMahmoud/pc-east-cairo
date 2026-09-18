@@ -59,9 +59,9 @@ export function Nav() {
     >
       <div className="wrap flex items-center justify-between gap-5 py-3.5">
         <a href="#top" className="flex items-center gap-2.5" aria-label="Property Chance — الصفحة الرئيسية">
-          <Logo className="h-10 w-10 text-bone" />
+          <Logo className="h-10 w-10 text-red" />
           <span className="font-display text-[1.02rem] font-semibold tracking-[0.04em]">
-            PC <b className="text-red">-</b> EAST CAIRO
+            PC <b className="text-red-bright">-</b> EAST CAIRO
           </span>
         </a>
 

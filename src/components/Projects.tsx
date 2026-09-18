@@ -20,7 +20,7 @@ export function Projects() {
 
         <Reveal delay={0.12}>
           <h3 className="font-display text-[1.9rem] font-semibold tracking-[0.02em]">{p.name}</h3>
-          <div className="mt-2 text-[0.95rem] font-bold text-red">{p.location}</div>
+          <div className="mt-2 text-[0.95rem] font-bold text-red-bright">{p.location}</div>
           <p className="mt-5 max-w-xl text-mute">{p.body}</p>
 
           <div className="my-7 border-y border-line py-5">
@@ -34,7 +34,7 @@ export function Projects() {
           <ul className="grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-3">
             {p.plans.map((plan) => (
               <li key={plan.down} className="bg-ink px-4 py-5 text-center transition-colors hover:bg-card">
-                <b className="block font-display text-[1.6rem] text-red">{plan.down}</b>
+                <b className="block font-display text-[1.6rem] text-red-bright">{plan.down}</b>
                 <span className="text-[0.88rem] text-mute">{plan.term}</span>
               </li>
             ))}

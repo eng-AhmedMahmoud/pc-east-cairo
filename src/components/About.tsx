@@ -25,7 +25,7 @@ export function About() {
         >
           {site.about.stats.map((stat) => (
             <div key={stat.label} className="py-5 first:pt-0 last:pb-0">
-              <b className="block font-display text-[1.9rem] leading-none text-red">
+              <b className="block font-display text-[1.9rem] leading-none text-red-bright">
                 {stat.value === null ? (
                   stat.display
                 ) : (

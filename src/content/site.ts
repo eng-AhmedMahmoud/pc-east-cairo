@@ -3,7 +3,7 @@ export const site = {
     name: "Property Chance",
     latin: "PC — EAST CAIRO",
     tagline: "فرصة صح",
-    email: "Propertychance00@gmail.com",
+    email: "contact@propertychance-pc.com",
     taxId: "774398833",
     taxCardNo: "2500216267264749",
     url: "https://propertychance-pc.com",
